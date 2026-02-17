@@ -6,6 +6,11 @@ public class Main {
         int d = sc.nextInt();
         int [] day = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
+        if (m < 1 || m > 12) {
+            System.out.println("No");
+            return;
+        }
+        
         int D = day[m-1];
         if(d <= D) System.out.println("Yes");
         else System.out.println("No");
