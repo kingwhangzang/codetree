@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int [] map = new int [200];
+        int [] map = new int [202];
         
         for (int i = 0; i < N; i++) {
             int A = sc.nextInt();
@@ -20,7 +20,5 @@ public class Main {
         }
 
         System.out.println(M);
-
-        
     }
 }
