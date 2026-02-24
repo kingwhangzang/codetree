@@ -5,6 +5,8 @@ public class Main {
         int n = sc.nextInt();
         String res = "";
 
+        if(n == 0) System.out.println(n);
+
         while (n > 0) {
             res += (n % 2);
 
