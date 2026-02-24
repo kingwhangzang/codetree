@@ -3,14 +3,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int [] map = new int [202];
+        int OFFSET = 100; // 수가 음수인 경우가 존재하기 때문에 + 100을 해줘서 양수로 만들자 
+        int [] map = new int [205];
         
         for (int i = 0; i < N; i++) {
             int A = sc.nextInt();
             int B = sc.nextInt();
 
             for(int j = A; j < B; j++) {
-                map[j]++;
+                map[j+OFFSET]++;
             }
         }
 
