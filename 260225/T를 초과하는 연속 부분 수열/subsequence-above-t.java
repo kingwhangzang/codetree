@@ -13,13 +13,10 @@ public class Main {
         int max = 0;
 
         st = new StringTokenizer(br.readLine());
-        for(int i = 0; i < n; i++) {            
+        for(int i = 0; i < n; i++) {
             int cur = Integer.parseInt(st.nextToken());
             if(cur > t) cnt++;
-            else {
-                max = cnt;
-                cnt = 0;
-            }
+            else cnt = 0;
             max = Math.max(max, cnt);
         }
         System.out.println(max);
