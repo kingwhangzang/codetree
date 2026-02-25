@@ -8,8 +8,9 @@ public class Main {
 
 
         int prev = Integer.parseInt(br.readLine());
-        int cnt = 0;
-        int max = 0;
+        int cnt = 1;
+        int max = 1;
+
         for (int i = 1; i < n; i++) {
             int cur = Integer.parseInt(br.readLine());
 
@@ -19,8 +20,8 @@ public class Main {
             else {
                 cnt = 1;
             }
+            if (cnt > max) max = cnt;
             prev = cur;
-            max = Math.max(max, cnt);
         }
         System.out.println(max);
     }
