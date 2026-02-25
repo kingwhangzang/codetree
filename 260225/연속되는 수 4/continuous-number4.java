@@ -7,14 +7,10 @@ public class Main {
         int n = Integer.parseInt(br.readLine());
 
 
-        int prev = -1;
+        int prev = Integer.parseInt(br.readLine());
         int cnt = 0;
         int max = 0;
-        for (int i = 0; i < n; i++) {
-            if(i == 0) {
-                prev = Integer.parseInt(br.readLine());
-                continue;
-            }
+        for (int i = 1; i < n; i++) {
             int cur = Integer.parseInt(br.readLine());
 
             if(cur > prev) {
