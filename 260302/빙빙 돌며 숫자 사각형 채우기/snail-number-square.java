@@ -32,6 +32,7 @@ public class Main {
             for(int j = 0; j < m; j++) {
                 System.out.println(map[i][j] + " ");
             }
+            System.out.println();
         }
     }
 }
