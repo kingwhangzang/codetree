@@ -19,7 +19,7 @@ public class Main {
             int nr = r + dr[dir];
             int nc = c + dc[dir];
             
-            if(nr < 0 || nr >= n || nc < 0 || nc >= m) {
+            if(nr < 0 || nr >= n || nc < 0 || nc >= m || map[nr][nc] != 0) {
                 dir = (dir + 1) % 4;
                 nr = r + dr[dir];
                 nc = c + dc[dir];
@@ -30,7 +30,7 @@ public class Main {
         
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < m; j++) {
-                System.out.println(map[i][j] + " ");
+                System.out.print(map[i][j] + " ");
             }
             System.out.println();
         }
